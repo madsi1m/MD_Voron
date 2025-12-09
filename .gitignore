@@ -1,2 +1,4 @@
 *.png
 config/printer-*
+config/ShakeTune_results*
+config/.moonraker.conf.*

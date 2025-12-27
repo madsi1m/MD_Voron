@@ -13,7 +13,7 @@ shaper_type_y: ei
 damping_ratio_y: 0.057
 
 [printer]
-kinematics: md_hybrid_corexy
+kinematics: corexy
 max_velocity: 420
 max_accel: 19000
 max_z_velocity: 300
@@ -55,28 +55,13 @@ stealthchop_threshold: 0
 ##  A Stepper - Right
 ##  Connected to MOTOR_1
 ##  Endstop connected to DIAG_1
-[stepper_x1]
+[stepper_y]
 step_pin: PG0
 dir_pin: PG1
 enable_pin: !PF15
 rotation_distance: 40
 microsteps: 64
 full_steps_per_rotation: 400  #set to 200 for 1.8 degree stepper
-
-[tmc2209 stepper_x1]
-uart_pin: PD11
-interpolate: true #false
-run_current: 1.24
-sense_resistor: 0.110
-stealthchop_threshold: 0
-
-[stepper_y]
-step_pin: PE6
-dir_pin: !PA14
-enable_pin: !PE0
-rotation_distance: 40
-microsteps: 16
-full_steps_per_rotation: 400
 endstop_pin: PG9
 position_min: 0
 position_endstop: 310
@@ -85,6 +70,13 @@ homing_speed: 100  #Max 100 (default 25)
 homing_retract_dist: 5
 homing_positive_dir: true
 
+[tmc2209 stepper_y]
+uart_pin: PD11
+interpolate: true #false
+run_current: 1.24
+sense_resistor: 0.110
+stealthchop_threshold: 0
+ 
 #####################################################################
 #   Z Stepper Settings
 #####################################################################

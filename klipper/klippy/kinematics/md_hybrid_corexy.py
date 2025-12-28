@@ -5,6 +5,10 @@
 # Modified 2024 by Mikkel Schmidt <mikkel.schmidt@gmail.com>
 # Modified 2025 by madsi1 to work in his voron :)
 #
+# Ref:
+# - https://github.com/Klipper3d/klipper/blob/master/klippy/kinematics/hybrid_corexy.py
+# - https://github.com/Rat-OS/RatOS-configuration/blob/v2.1.x/klippy/kinematics/ratos_hybrid_corexy.py
+#
 # This file may be distributed under the terms of the GNU GPLv3 license.
 import logging
 import stepper
